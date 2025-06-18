@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif; /* Define uma fonte padrão */
+  background-color: #f4f4f4; /* Cor de fundo suave para a página */
+  display: flex; /* Usamos flexbox para centralizar o conteúdo */
+  flex-direction: column; /* Coloca os itens em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente (se houver espaço suficiente) */
+  min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+  margin: 0; /* Remove margens padrão do body */
+  padding: 20px; /* Adiciona um padding geral */
+  box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total */
+}
+
+h1 {
+  color: #333; /* Cor do título */
+  margin-bottom: 30px; /* Espaço abaixo do título */
+}
+
+/* Estilo para a caixa principal onde o conversor estará */
+div {
+  background-color: #fff; /* Fundo branco para os grupos de input/select */
+  padding: 20px;
+  margin-bottom: 15px; /* Espaço entre cada grupo */
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra suave */
+  width: 100%; /* Ocupa toda a largura disponível no container pai */
+  max-width: 400px; /* Limita a largura máxima para não ficar muito largo em telas grandes */
+  display: flex; /* Usa flexbox para os labels e inputs dentro da div */
+  flex-direction: column; /* Coloca label e input em coluna */
+}
+
+label {
+  margin-bottom: 8px; /* Espaço entre o label e o input/select */
+  font-weight: bold; /* Texto do label em negrito */
+  color: #555;
+}
+
+input[type="number"],
+select {
+  width: calc(100% - 20px); /* Ocupa quase toda a largura com um pequeno respiro */
+  padding: 10px;
+  border: 1px solid #ddd; /* Borda suave */
+  border-radius: 4px; /* Cantos arredondados */
+  font-size: 1em;
+  margin-bottom: 10px; /* Espaço entre o input/select e o próximo elemento dentro da div */
+}
+
+button {
+  background-color: #007bff; /* Cor de fundo do botão (azul) */
+  color: white; /* Cor do texto do botão */
+  padding: 12px 20px;
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Cantos arredondados */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  font-size: 1.1em;
+  margin-top: 20px; /* Espaço acima do botão */
+  transition: background-color 0.3s ease; /* Transição suave na cor de fundo ao passar o mouse */
+  width: 100%;
+  max-width: 400px; /* Mesma largura máxima que as divs */
+}
+
+button:hover {
+  background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+#resultado {
+  margin-top: 30px; /* Espaço acima do resultado */
+  font-size: 1.5em; /* Tamanho maior para o texto do resultado */
+  font-weight: bold; /* Negrito para o resultado */
+  color: #28a745; /* Cor verde para destaque do resultado */
+  text-align: center; /* Centraliza o texto do resultado */
+  width: 100%;
+  max-width: 400px;
+}
